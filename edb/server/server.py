@@ -1724,6 +1724,9 @@ class Server(ha_base.ClusterProtocol):
 
         return obj
 
+    def wasm_socket_path(self) -> str:
+        return os.path.join(self._runstate_dir, '.s.wasm_ext')
+
 
 def _cleanup_wildcard_addrs(
     hosts: Sequence[str]
