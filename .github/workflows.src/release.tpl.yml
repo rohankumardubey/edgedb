@@ -170,7 +170,7 @@ jobs:
         ref: master
         path: dockerfile
     - name: Publish Docker Image
-      uses: elgohr/Publish-Docker-Github-Action@3.04
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: edgedb/edgedb
         username: ${{ secrets.DOCKER_USERNAME }}
